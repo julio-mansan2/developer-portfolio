@@ -1,0 +1,182 @@
+@media (min-width: 500px) and (max-width: 1200px) {
+    body {
+        background: url(../images/image-profile-tablet.webp) right top no-repeat;
+        background-size: 35%;
+        background-color: var(--color1);
+    }
+    
+    .header {
+        padding: 3%;
+    }
+
+    .main .intro {
+        padding: 5% 3%;
+        margin-bottom: 3.125rem;
+        background: url(../images/pattern-rings.svg) -20% top no-repeat;
+    }
+
+    .main .intro h1 {
+        font-size: 3.5rem;
+    }
+
+    .main .intro p {
+        font-size: 1rem;
+    }
+
+    .main .experiences {
+        padding: 5% 3%;
+    }
+
+    .main .experiences > div {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .main .works-section {
+        padding: 5% 3%;
+    }
+
+    .main .project-img {
+        max-height: 12.5rem;
+        width: 100%;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .main .work p {
+        margin-bottom: 1.25rem;
+    }
+
+    .main .project-actions {
+        position: relative;
+        z-index: 1;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        flex-direction: row;
+    }
+
+    .main .project-actions a {
+        font-size: 1rem;
+    }
+
+    .footer {
+        padding: 5% 3%;
+    }
+    
+    .footer-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4.375rem;
+    }
+
+    .footer-main h1,
+    .footer-main p {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 500px) {
+    body {
+        background: url(../images/image-profile-mobile.webp) center top no-repeat;
+        background-color: var(--color1);
+        background-size: 60%;
+    }
+    
+    .header {
+        padding: 3%;
+        flex-direction: column;
+        text-align: center;
+        gap: 1.875rem;
+    }
+
+    .main .intro {
+        padding: 100% 3% 5% 3%;
+        margin-bottom: 3.125rem;
+        background: url(../images/pattern-rings.svg) 200% top no-repeat;
+        text-align: center;
+    }
+
+    .main .intro h1 {
+        font-size: 3rem;
+    }
+
+    .main .intro p {
+        font-size: 1rem;
+    }
+
+    .main .experiences {
+        padding: 3%;
+        margin-bottom: 1.875rem;
+    }
+
+    .main .experiences > div {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .main .works-intro {
+        gap: 1.875rem;
+    }
+
+    .main .works-intro a {
+        font-size: 0.7rem;
+    }
+
+    .main .works-intro h1 {
+        font-size: 2rem;
+    }
+
+    .main .works-section {
+        padding: 5% 3%;
+    }
+
+    .mobile {
+        display: block;
+        margin: 0 3% 1.875rem 3%;
+    }
+
+    .main .project-actions {
+        position: relative;
+        z-index: 1;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        flex-direction: row;
+    }
+
+    .main .project-actions a {
+        font-size: 0.9rem;
+    }
+
+    .main .work p {
+        margin-bottom: 1.25rem;
+    }
+
+    .main .works {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        padding: 5% 3%;
+    }
+    
+    .footer-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4.375rem;
+    }
+
+    .footer-main h1,
+    .footer-main p {
+        text-align: center;
+    }
+
+    .footer section:last-child {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.875rem;
+    }
+}
